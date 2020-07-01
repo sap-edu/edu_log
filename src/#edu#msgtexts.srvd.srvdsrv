@@ -1,0 +1,4 @@
+@EndUserText.label: 'Messages Texts'
+define service /EDU/MSGTEXTS {
+  expose /EDU/P_MSGTEXTS as Text;
+}

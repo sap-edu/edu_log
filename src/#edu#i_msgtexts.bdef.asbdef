@@ -1,0 +1,17 @@
+managed implementation in class /edu/cl_bp_i_msgtexts unique;
+
+define behavior for /EDU/I_MSGTEXTS alias Text
+persistent table /edu/msg_texts
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  field ( mandatory ) langu, msgid, msgno;
+
+  create;
+  update;
+  delete;
+
+//  determination determineLanguage on save { create; }
+//  determination determineLanguage on modify { create; }
+}
